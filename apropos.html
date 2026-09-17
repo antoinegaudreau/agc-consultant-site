@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="fr-CA"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos — firme de génie, agronomie et environnement au Québec | AGC Consultant</title><meta name="description" content="AGC Consultant inc., firme multidisciplinaire fondée par Antoine Gaudreau, ing., agr. — B. Ing. (Université McGill) et programme d'accès à la profession d'agronome (Université Laval). Génie, agronomie et environnement au Québec.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--forest:#19221A;--green:#344531;--olive:#586024;--lime:#8AA125;--lime-dim:#7A8E20;--ivory:#EFEDEB;--ivory-2:#E5E3DF;--mineral:#A5A39F;--line:#CFCDC8;--forest-deep:#12160F;--ink-soft:#5A6154;--maxw:1240px}
+  *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+  body{font-family:"Space Grotesk",system-ui,sans-serif;background:var(--ivory);color:var(--forest);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{letter-spacing:-.025em;line-height:1.06;font-weight:700}a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .lbl{font-family:"Space Mono";font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);display:inline-flex;align-items:center;gap:.6em}
+  .lbl::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime)}
+  .btn{display:inline-flex;align-items:center;gap:.6em;font-weight:600;font-size:.9rem;padding:.85em 1.4em;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s;font-family:"Space Grotesk"}
+  .btn .dot{width:7px;height:7px;background:var(--lime);border-radius:50%;transition:transform .2s}
+  .btn-primary{background:var(--forest);color:var(--ivory)}.btn-primary:hover{background:var(--green)}.btn-primary:hover .dot{transform:scale(1.5)}
+  .btn-lime{background:var(--lime);color:var(--forest)}.btn-lime:hover{background:var(--lime-dim);transform:translateY(-2px)}
+  .arrow{transition:transform .2s}.btn:hover .arrow{transform:translate(3px,-3px)}
+  .topbar{position:fixed;top:18px;left:0;right:0;z-index:82;display:flex;justify-content:center;pointer-events:none}.pill{position:static;transform:none;z-index:80;display:flex;align-items:center;gap:8px;background:rgba(239,237,235,.75);backdrop-filter:saturate(150%) blur(16px);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 8px 8px 18px;box-shadow:0 16px 40px -20px rgba(25,34,26,.5);transition:transform .35s,padding .3s;max-width:calc(100vw - 28px);pointer-events:auto}
+  .pill.hide{transform:translateY(-140%)}
+  .pill .logo img{height:28px;display:block}
+  .pill nav{display:flex;align-items:center;gap:2px}
+  .pill a.link{font-size:.86rem;font-weight:500;color:var(--forest);padding:.5em .8em;border-radius:999px;transition:background .15s}
+  .pill a.link:hover,.pill a.link.on{background:rgba(25,34,26,.07)}
+  .pill .cta{background:var(--forest);color:var(--ivory);padding:.55em 1em;border-radius:999px;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:.5em}
+  .pill .cta .dot{width:6px;height:6px;background:var(--lime);border-radius:50%}
+  .pill .cta:hover{background:var(--green)}
+  .burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:9px}.burger span{width:20px;height:2px;background:var(--forest);display:block}
+  .phero{padding:150px 0 70px}
+  .phero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+  .phero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);letter-spacing:-.04em;margin:20px 0 .5em}
+  .phero .sub{font-size:1.15rem;color:var(--ink-soft);max-width:440px;margin-bottom:28px}
+  .phero-imgs{display:flex;gap:16px}
+  .pimg{flex:1;border-radius:16px;overflow:hidden;background:var(--forest);position:relative}
+  .pimg:first-child{margin-top:30px;aspect-ratio:3/4}.pimg:last-child{margin-bottom:30px;aspect-ratio:3/4}
+  .pimg svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+  .pimg .tag{position:absolute;left:12px;top:12px;font-family:"Space Mono";font-size:.54rem;letter-spacing:.12em;color:var(--lime);z-index:2}
+  .meta-row{display:flex;gap:40px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+  .meta .k{font-family:"Space Mono";font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:5px}
+  .meta .v{font-weight:600;font-size:.95rem}
+  .inc{padding:96px 0;background:var(--ivory-2);border-top:1px solid var(--line)}
+  .sechead{display:flex;gap:16px;align-items:baseline;margin-bottom:44px;flex-wrap:wrap}
+  .sechead .n{font-family:"Space Mono";color:var(--lime);font-weight:700;font-size:.88rem}
+  .sechead h2{font-size:clamp(1.8rem,3.6vw,2.7rem)}
+  .fcards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .fcard{background:var(--ivory);border:1px solid var(--line);border-radius:16px;padding:28px;transition:transform .2s,border-color .2s}
+  .fcard:hover{transform:translateY(-4px);border-color:var(--olive)}
+  .fchip{width:44px;height:44px;border-radius:11px;background:var(--lime);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .fchip svg{width:22px;height:22px}
+  .fcard h3{font-size:1.2rem;margin-bottom:8px;display:flex;align-items:center;gap:.5em;flex-wrap:wrap}
+  .fcard .tag-new{font-family:"Space Mono";font-size:.55rem;letter-spacing:.1em;background:var(--forest);color:var(--lime);padding:.3em .6em;border-radius:4px}
+  .fcard p{font-size:.92rem;color:var(--ink-soft);margin-bottom:12px}
+  .fcard ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+  .fcard li{font-family:"Space Mono";font-size:.66rem;letter-spacing:.04em;color:var(--olive);border:1px solid var(--line);border-radius:5px;padding:.3em .6em}
+  .narr{padding:100px 0}
+  .narr .big{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:500;line-height:1.35;max-width:820px;letter-spacing:-.01em}
+  .narr .big em{font-style:normal;color:var(--olive)}
+  .foot-sec{position:relative;padding:70px 0 40px;overflow:hidden;background:var(--forest-deep)}
+  .foot-bg{position:absolute;inset:0;z-index:0}.foot-bg svg{width:100%;height:100%;opacity:.4}
+  .foot-sec::after{content:"";position:absolute;inset:0;background:rgba(18,22,15,.4);z-index:1}
+  .foot-card{position:relative;z-index:2;background:rgba(239,237,235,.88);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.5);border-radius:24px;padding:40px}
+  .fc-cta{text-align:center;padding:20px 0 34px;border-bottom:1px solid var(--line);margin-bottom:34px}
+  .fc-cta h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin:12px auto 24px;max-width:560px}
+  .fc-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  .fc-grid img.fl{height:32px;margin-bottom:14px}.fc-grid .sig{font-size:.92rem;max-width:240px}
+  .fc-col h4{font-family:"Space Mono";font-size:.6rem;letter-spacing:.14em;color:var(--olive);text-transform:uppercase;margin-bottom:12px}
+  .fc-col a,.fc-col .v{display:block;font-size:.9rem;margin-bottom:9px}.fc-col a:hover{color:var(--olive)}
+  .fc-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:24px;font-family:"Space Mono";font-size:.68rem;color:#8E948A}
+  @media(max-width:900px){.pill nav{display:none}.burger{display:flex}.phero-grid{grid-template-columns:1fr;gap:30px}.fcards{grid-template-columns:1fr}.fc-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.fc-grid{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.fc-col a,.cinfo a{overflow-wrap:anywhere}.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.pill .portal-link{border:1.5px solid var(--forest);border-radius:999px;padding:.45em .85em;margin-left:2px}.pill .portal-link:hover{background:var(--forest);color:var(--ivory)}.portal-fab{position:absolute;top:50%;right:18px;transform:translateY(-50%);z-index:81;display:inline-flex;align-items:center;gap:.55em;background:rgba(239,237,235,.92);backdrop-filter:saturate(150%) blur(16px);border:3px solid var(--lime);border-radius:999px;padding:.75em 1.35em;font-family:"Space Grotesk";font-weight:700;font-size:.9rem;color:var(--forest);box-shadow:0 16px 40px -20px rgba(25,34,26,.5),0 0 0 3px rgba(138,161,37,.18);transition:transform .2s,background .2s,color .2s,box-shadow .2s;pointer-events:auto}.portal-fab .d{width:7px;height:7px;border-radius:50%;background:var(--lime)}.portal-fab:hover{background:var(--forest);color:var(--ivory);border-color:var(--forest);transform:translateY(calc(-50% - 2px));box-shadow:0 16px 40px -16px rgba(25,34,26,.7),0 0 0 3px rgba(138,161,37,.28)}@media(max-width:600px){.portal-fab{padding:.55em .9em;font-size:.74rem;border-width:2px}}.pill nav.mnav{display:flex}.mdrawer{position:fixed;inset:0;z-index:95;display:none}.mdrawer.open{display:block}.mdrawer .backdrop{position:absolute;inset:0;background:rgba(18,22,15,.55);backdrop-filter:blur(2px);opacity:0;transition:opacity .25s}.mdrawer.open .backdrop{opacity:1}.mdrawer .panel{position:absolute;top:0;right:0;height:100%;width:min(340px,86vw);background:var(--ivory);box-shadow:-20px 0 60px -20px rgba(0,0,0,.4);transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;padding:26px 22px}.mdrawer.open .panel{transform:translateX(0)}.mdrawer .mtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.mdrawer .mtop img{height:36px}.mdrawer .mclose{background:none;border:1px solid var(--line);border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--forest);font-size:1.1rem}.mdrawer nav{display:flex;flex-direction:column;gap:2px}.mdrawer nav a{padding:14px 6px;font-size:1.05rem;font-weight:600;color:var(--forest);border-bottom:1px solid var(--line)}.mdrawer nav a.sub{font-size:.92rem;font-weight:500;color:var(--ink-soft);padding-left:16px}.mdrawer .mcta{margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:20px}@media(min-width:901px){.mdrawer{display:none!important}}
+  /* ---- credentials ---- */
+  .credential{position:relative;background:var(--forest);border-radius:18px;padding:44px;overflow:hidden;color:var(--ivory)}
+  .cred-bg{position:absolute;inset:0;opacity:.4}
+  .cred-inner{position:relative;z-index:1}
+  .who-name{font-size:clamp(1.5rem,2.6vw,1.9rem);font-weight:700;color:#fff}
+  .who-role{font-family:"Space Mono";font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin:.5em 0 1.8em}
+  .cred-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--green);border:1px solid var(--green);border-radius:12px;overflow:hidden}
+  .cred-item{background:var(--forest);padding:26px;position:relative}
+  .ci-badge{position:absolute;top:22px;right:22px;font-family:"Space Mono";font-size:.6rem;letter-spacing:.1em;border:1px solid var(--green);color:var(--lime);padding:.3em .6em;border-radius:6px}
+  .ci-k{font-family:"Space Mono";font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:.7em}
+  .ci-v{font-size:1rem;font-weight:600;color:#fff;line-height:1.4;max-width:280px;padding-right:50px}
+  /* ---- expertise comparison ---- */
+  .expertise-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:start;max-width:900px}
+  .exp-col{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+  .exp-k{font-family:"Space Mono";font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:16px}
+  .exp-col ul{list-style:none}
+  .exp-col li{position:relative;padding-left:20px;margin-bottom:11px;font-size:.95rem;color:var(--forest)}
+  .exp-col li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;background:var(--lime);border-radius:2px}
+  .exp-plus{align-self:center;font-family:"Space Grotesk";font-size:2.2rem;font-weight:700;color:var(--lime)}
+  .exp-result{margin-top:30px;max-width:640px;border-top:1px solid var(--line);padding-top:22px}
+  .exp-result p{font-size:1.05rem;color:var(--ink-soft);margin-top:.5em}
+  /* ---- stats (résultats concrets) ---- */
+  .calm{background:var(--forest);color:var(--ivory)}
+  .calm h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.6rem);max-width:620px;margin:.3em 0 0}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:44px}
+  .stat{border-top:2px solid var(--green);padding-top:16px}
+  .stat .k{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:700;color:#fff;letter-spacing:-.03em}
+  .stat .k b{color:var(--lime);font-weight:700}
+  .stat p{font-size:.85rem;color:#9DA99B;margin-top:6px}
+  /* ---- méthode ---- */
+  .method{background:var(--ivory-2)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .step{border-top:2px solid var(--forest);padding-top:18px}
+  .step .n{font-family:"Space Mono";color:var(--olive);font-size:.8rem}
+  .step h4{font-size:1.2rem;margin:10px 0 6px}
+  .step p{font-size:.88rem;color:var(--ink-soft)}
+  @media(max-width:900px){
+    .cred-grid{grid-template-columns:1fr}
+    .expertise-grid{grid-template-columns:1fr}
+    .exp-plus{display:none}
+    .stats,.steps{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){.stats,.steps{grid-template-columns:1fr}.ci-v{padding-right:0}}
+/* ===== AJUSTEMENTS RESPONSIVES (tablette + mobile) ===== */
+@media(max-width:960px){
+  /* Barre du haut : plus de chevauchement — pilule a gauche, portail a droite */
+  .topbar{justify-content:space-between;padding:0 14px;gap:10px}
+  .pill{padding:7px 7px 7px 14px;gap:6px;flex:0 1 auto;min-width:0}
+  .pill .cta{display:none}
+  .portal-fab{position:static;top:auto;right:auto;transform:none;flex:0 0 auto;white-space:nowrap}
+  .portal-fab:hover{transform:translateY(-2px)}
+  /* En-tetes de section : empiler le texte d'accompagnement */
+  .sechead{flex-direction:column;gap:10px;margin-bottom:34px}
+  .sechead p{margin-left:0;max-width:100%}
+  /* Ruban de services : cartes plus hautes pour respirer */
+  .rcard{height:210px}
+  .rcard .c{padding:20px}
+  .rcard h3{font-size:1.3rem}
+}
+@media(max-width:768px){
+  .wrap{padding:0 22px}
+  section.blk,.ribbon-sec{padding:64px 0}
+  .foot-card{padding:26px 20px;border-radius:18px}
+  .fc-top{margin-bottom:24px}
+  .hero{min-height:auto;padding:104px 0 56px}
+  .hero-sub{margin-bottom:26px}
+  .hero-cta{gap:.6em}
+  .hero-cta .btn{font-size:.88rem;padding:.75em 1.15em}
+  .marq{padding:22px 0}
+  .track{gap:44px}
+  .track span{font-size:1.05rem}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}
+  .pill .logo img{height:26px}
+  .portal-fab{font-size:.7rem;padding:.5em .8em;gap:.4em;border-width:2px}
+  section.blk,.ribbon-sec{padding:52px 0}
+  .sechead h2{font-size:1.65rem}
+  .sechead p{font-size:.98rem}
+  /* Hero : titre lisible sans deborder */
+  .hero h1{font-size:2.35rem;letter-spacing:-.03em}
+  .hero-sub{font-size:1rem}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{justify-content:center;width:100%}
+  /* Ruban */
+  .rcard{height:180px}
+  .rcard h3{font-size:1.18rem}
+  /* Chiffres cles */
+  .stat .k{font-size:1.5rem}
+  .stat p{font-size:.86rem}
+  .calm h2{font-size:1.6rem}
+  /* FAQ : zones tactiles plus grandes */
+  details.faq-item summary{font-size:.98rem;padding:17px 0;gap:12px}
+  details.faq-item p{font-size:.94rem;padding-bottom:17px}
+  /* Formulaire */
+  .w3form{padding:20px}
+  .contact h2{font-size:1.65rem}
+  .cinfo2 .row{flex-direction:column;gap:.2em}
+  .cinfo2 .k{min-width:0}
+  /* Affiliations */
+  .aff-logos{flex-direction:column;gap:18px}
+  .aff-item{max-width:100%}
+  .aff-item img{height:46px}
+  /* Pied de page */
+  .fc-bottom{flex-direction:column;gap:8px;font-size:.64rem}
+  .fc-pages{gap:12px}
+  /* Pages de service : hero et cartes */
+  .phero{padding:110px 0 48px}
+  .phero h1{font-size:2.15rem}
+  .phero .sub{font-size:1rem}
+  .phero-imgs{gap:10px}
+  .meta-row{gap:20px}
+  .fcard{padding:22px}
+  .fcard h3{font-size:1.1rem}
+  /* Articles */
+  .artbody .lead{font-size:1.1rem}
+  .artbody p{font-size:1rem}
+  .artbody h2{font-size:1.28rem}
+  .artbody ol li{padding-left:38px}
+  .narr .big{font-size:1.25rem}
+  /* Blogue */
+  .post .b{padding:18px}
+  .post h3{font-size:1.06rem}
+}
+@media(max-width:400px){
+  .wrap{padding:0 15px}
+  .hero h1{font-size:2.05rem}
+  .pill{padding:6px 6px 6px 11px}
+  .portal-fab{font-size:.64rem;padding:.45em .7em}
+  .portal-fab .d{width:5px;height:5px}
+}
+/* Confort tactile general */
+@media(hover:none){
+  .rcard:hover{flex:1}
+  .rcard:hover .img img{transform:none}
+}
+/* ===== CONTRASTE SUR FONDS SOMBRES (lisibilite mobile) ===== */
+/* L'olive #586024 sur le forest #19221A avait un ratio d'environ 2.4:1 :
+   illisible. Sur fond sombre, les etiquettes passent au lime. */
+.calm .lbl,.method.dark .lbl,.foot-sec .lbl,.programs .lbl,
+.credential .lbl{color:var(--lime)}
+.calm .lbl::before,.foot-sec .lbl::before,.programs .lbl::before{background:var(--lime)}
+/* Textes secondaires : plus clairs pour respecter les seuils d'accessibilite */
+.calm .stat p,.calm .lead,.programs .prog p{color:#C6CFBD}
+.credential .deg,.credential .ci-v{color:#D2DACB}
+.value p{color:#C0CAB6}
+.artmeta{color:#B9C2AE}
+@media(max-width:768px){
+  /* Sur petit ecran, les petits textes gris deviennent illisibles : on monte
+     la taille et on eclaircit encore. */
+  .calm .stat p{font-size:.92rem;color:#CFD7C7}
+  .calm .lead{font-size:1.04rem;color:#CFD7C7}
+  .stat .k{font-size:1.6rem}
+  .lbl{font-size:.7rem;letter-spacing:.16em}
+  .credential .deg{font-size:1rem}
+}
+/* ===== CONTRASTE SUR FONDS CLAIRS ===== */.sechead .n{color:var(--olive)}.sechead p{color:#4A5246}.calm .sechead .n,.faq .sechead .n,.programs .sechead .n,.calm .lbl,.faq .lbl{color:var(--lime)}.calm .sechead p,.faq .sechead p,.programs .sechead p{color:#C6CFBD}@media(max-width:768px){.sechead .n{font-size:.95rem}.sechead p{font-size:1rem}}/* ===== LISIBILITE : MARGES MOBILES + CONTRASTE DES TITRES ===== */
+/* 1. Marges laterales : 15-18px collait au bord de l'ecran. */
+@media(max-width:768px){.wrap{padding:0 24px}}
+@media(max-width:560px){.wrap{padding:0 22px}}
+@media(max-width:400px){.wrap{padding:0 20px}}
+
+/* 2. Titres et chapeau : encre profonde plutot que vert sur vert. */
+.phero h1{color:#12151A}
+.artbody .lead{color:#1E2124;font-weight:500}
+.artbody h2{color:#14171A}
+.sechead h2{color:#14171A}
+.narr .big{color:#1E2124}
+.fc-top h2,section.cta h2{color:#14171A}
+/* Sur fond sombre, on garde le blanc. */
+.calm h2,.faq .sechead h2,.calm .sechead h2{color:#FFFFFF}
+
+/* 3. La puce lime des h2 passe DANS la marge, plus a l'exterieur. */
+.artbody h2{padding-left:22px}
+.artbody h2::before{left:0;top:.46em}
+@media(max-width:768px){
+  .artbody h2{padding-left:19px}
+  .artbody h2::before{left:0;width:8px;height:8px}
+}
+/* ===== PROTECTION CONTRE LE MODE SOMBRE FORCE =====
+   Certains navigateurs integres (Facebook, Instagram, visionneuses in-app)
+   forcent un theme sombre. Les sections qui n'avaient pas de fond explicite
+   heritaient alors du noir, rendant les titres fonces invisibles.
+   On declare le schema clair ET on donne un fond explicite a chaque section. */
+:root{color-scheme:light}
+html,body{background:#EFEDEB !important;color-scheme:light}
+/* Fonds explicites : plus rien n'herite */
+.phero{background:#EFEDEB}
+.narr{background:#EFEDEB}
+section.blk{background:#EFEDEB}
+.realisations{background:#EFEDEB}
+.artbody{background:#FBFAF8}
+.inc{background:#E5E3DF}
+.method{background:#E5E3DF}
+section.cta{background:#E5E3DF}
+.contact{background:#E5E3DF}
+.marq{background:#EFEDEB}
+.ribbon-sec{background:#EFEDEB}
+.faq{background:#19221A}
+.calm{background:#19221A}
+.foot-sec{background:#12160F}
+.credential{background:#19221A}
+/* Titres : forces en fonce sur les fonds clairs, en blanc sur les fonds sombres */
+.phero h1,.artbody h2,.narr .big,.inc h2,section.cta h2,.contact h2{color:#12151A}
+.sechead h2{color:#12151A}
+.calm h2,.calm .sechead h2,.faq .sechead h2,.credential .who-name{color:#FFFFFF !important}
+</style><link rel="canonical" href="https://www.agcconsultant.ca/apropos.html"><meta name="robots" content="index,follow"><meta name="geo.region" content="CA-QC"><meta name="geo.placename" content="Granby, Québec"><meta property="og:type" content="website"><meta property="og:site_name" content="AGC Consultant inc."><meta property="og:title" content="À propos — firme de génie, agronomie et environnement au Québec | AGC Consultant"><meta property="og:description" content="AGC Consultant inc., firme multidisciplinaire fondée par Antoine Gaudreau, ing., agr. — B. Ing. (Université McGill) et programme d'accès à la profession d'agronome (Université Laval). Génie, agronomie et environnement au Québec."><meta property="og:url" content="https://www.agcconsultant.ca/apropos.html"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "AGC Consultant inc.", "description": "AGC Consultant inc., firme multidisciplinaire fondée par Antoine Gaudreau, ing., agr. — B. Ing. (Université McGill) et programme d'accès à la profession d'agronome (Université Laval). Génie, agronomie et environnement au Québec.", "url": "https://www.agcconsultant.ca/apropos.html", "telephone": "+1-579-371-8733", "email": "antoinegaudreau@agcconsultant.ca", "address": {"@type": "PostalAddress", "streetAddress": "38, rue de Beauharnois", "addressLocality": "Granby", "addressRegion": "QC", "postalCode": "J2H 0V9", "addressCountry": "CA"}, "areaServed": {"@type": "State", "name": "Québec"}, "founder": {"@type": "Person", "name": "Antoine Gaudreau", "jobTitle": "Ingénieur et agronome"}, "knowsAbout": ["Génie agricole", "Agronomie", "Environnement", "Plans et devis de bâtiments agricoles", "Bases de silos", "Ouvrages hydro-agricoles", "Drainage", "PAEF", "Bilan de phosphore", "Suivi de cultures par drone", "Carrières et sablières", "Autorisations MELCCFP", "Sols contaminés", "Subventions Prime-Vert, ÉcoPerformance et Bioénergies"]}</script><!-- Cloudflare Web Analytics : va dans ton tableau de bord Cloudflare > Analytics > Web Analytics, active-le pour ton domaine, colle le token qu'il te donne ci-dessous, puis décommente. -->
+<!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "TON_TOKEN_ICI"}'></script> -->
+<meta property="og:image" content="https://www.agcconsultant.ca/og-default.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="fr_CA"><meta name="twitter:image" content="https://www.agcconsultant.ca/og-default.jpg"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"></head>
+<body>
+<div class="topbar">
+<div class="pill" id="pill">
+  <a href="index.html" class="logo"><img src="logo-agc-nav.png" alt="AGC"></a>
+  <nav>
+    <a class="link" href="genie-agricole.html">Génie</a>
+    <a class="link" href="agronomie.html">Agronomie</a>
+    <a class="link" href="environnement.html">Environnement</a>
+    <a class="link on" href="apropos.html">À propos</a><a class="link" href="blog.html">Blogue</a>
+  </nav>
+  <a class="cta" href="index.html#contact"><span class="dot"></span>Nous joindre</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<a class="portal-fab" href="portail.html"><span class="d"></span>Portail client</a>
+</div>
+<section class="phero"><div class="wrap"><div class="phero-grid">
+  <div>
+    <span class="lbl">À propos</span>
+    <h1>L'ingénierie rencontre le terrain</h1>
+    <p class="sub">Une firme multidisciplinaire — génie, agronomie, environnement — au service des producteurs et du territoire du Québec.</p>
+    <a class="btn btn-lime" href="index.html#contact"><span class="dot" style="background:var(--forest)"></span>Discuter de votre projet</a>
+    <div class="meta-row">
+      <div class="meta"><div class="k">Fondateur</div><div class="v">Antoine Gaudreau, ing., agr.</div></div>
+      <div class="meta"><div class="k">Formation</div><div class="v">McGill &amp; Université Laval</div></div>
+      <div class="meta"><div class="k">Territoire</div><div class="v">Tout le Québec</div></div>
+    </div>
+  </div>
+  <div class="phero-imgs">
+    <div class="pimg"><img src="photo-ingenierie.jpg" alt="Expertise en ingénierie"></div>
+    <div class="pimg"><img src="photo-territoire.jpg" alt="Le territoire du Québec"></div>
+  </div>
+</div></div></section>
+<section class="narr"><div class="wrap"><p class="big">Les projets agricoles et environnementaux relèvent souvent à la fois du génie et de l'agronomie. AGC Consultant réunit les deux compétences, ce qui permet de traiter la conception et l'encadrement réglementaire d'un projet dans un <em>mandat unique</em>.</p></div></section>
+<section class="blk" id="credentials"><div class="wrap">
+  <div class="sechead reveal"><span class="n">01</span><h2>Une double reconnaissance professionnelle</h2><p>Deux formations universitaires et deux ordres professionnels.</p></div>
+  <div class="credential reveal">
+    <svg class="cred-bg" viewBox="0 0 900 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="#33502F" stroke-width="1.2" fill="none"><path d="M-20 60 C 180 20,340 100,560 60 S 860 10,940 70"/><path d="M-20 140 C 180 100,340 180,560 140 S 860 90,940 150"/><path d="M-20 220 C 180 180,340 260,560 220 S 860 170,940 230"/></g></svg>
+    <div class="cred-inner">
+      <div class="who-name">Antoine Gaudreau</div>
+      <div class="who-role">Ingénieur &amp; agronome</div>
+      <div class="cred-grid">
+        <div class="cred-item"><span class="ci-badge">OIQ</span><div class="ci-k">Génie</div><div class="ci-v">B. Ing., génie des bioressources — Université McGill</div></div>
+        <div class="cred-item"><span class="ci-badge">OAQ</span><div class="ci-k">Agronomie</div><div class="ci-v">Programme d'accès à la profession d'agronome — Université Laval</div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section class="narr"><div class="wrap">
+  <div class="sechead reveal"><span class="n">02</span><h2>Deux expertises, une vision intégrée</h2><p>Conception et encadrement réglementaire dans un même mandat.</p></div>
+  <div class="expertise-grid reveal">
+    <div class="exp-col"><div class="exp-k">L'ingénieur</div><ul><li>Plans et devis</li><li>Résistance des structures</li><li>Normes techniques</li><li>Surveillance de chantier</li></ul></div>
+    <div class="exp-plus">+</div>
+    <div class="exp-col"><div class="exp-k">L'agronome</div><ul><li>Santé des sols</li><li>Cycles de culture</li><li>Réglementation agroenvironnementale</li><li>Suivi des rendements</li></ul></div>
+  </div>
+  <div class="exp-result reveal"><span class="lbl">Résultat</span><p>Une recommandation unique, qui tient compte à la fois des exigences techniques et des contraintes agronomiques du projet.</p></div>
+</div></section>
+<section class="blk calm"><div class="wrap">
+  <div class="reveal"><span class="lbl" style="color:var(--lime)">03 — Des résultats concrets</span>
+    <h2>Quelques résultats obtenus pour nos clients.</h2>
+  </div>
+  <div class="stats reveal">
+    <div class="stat"><div class="k"><b>500 000 $</b>+</div><p>en subventions décrochées pour nos clients (Prime-Vert, ÉcoPerformance, Bioénergies).</p></div>
+    <div class="stat"><div class="k"><b>Milliers</b> de tonnes</div><p>de surplus d'excavation revalorisées pour des projets d'améliorations foncières pour l'agriculture.</p></div>
+    <div class="stat"><div class="k"><b>CPTAQ</b></div><p>Plan de restauration négocié pour un dossier d'exploitation complexe.</p></div>
+    <div class="stat"><div class="k"><b>MELCCFP</b></div><p>Entente négociée avec la Direction régionale du contrôle environnemental.</p></div>
+  </div>
+</div></section>
+<section class="blk method" id="methode"><div class="wrap">
+  <div class="sechead reveal"><span class="n">04</span><h2>Notre méthode</h2><p>Les quatre étapes d'un mandat, du diagnostic au suivi.</p></div>
+  <div class="steps reveal">
+    <div class="step"><div class="n">01</div><h4>Comprendre</h4><p>Lire le site, les contraintes et les objectifs.</p></div>
+    <div class="step"><div class="n">02</div><h4>Analyser</h4><p>Données, relevés, cadre réglementaire.</p></div>
+    <div class="step"><div class="n">03</div><h4>Concevoir</h4><p>Plans, devis et recommandations techniques.</p></div>
+    <div class="step"><div class="n">04</div><h4>Accompagner</h4><p>Du dépôt au suivi, jusqu'à la réalisation.</p></div>
+  </div>
+</div></section>
+<section class="foot-sec" id="contact">
+  <div class="foot-bg" aria-hidden="true"><svg viewBox="0 0 1400 400" preserveAspectRatio="xMidYMid slice"><g stroke="#3a4a34" stroke-width="1.2" fill="none"><path d="M0 120 C 220 70,440 180,700 110 S 1150 40,1460 140"/><path d="M0 240 C 220 190,440 300,700 230 S 1150 160,1460 260"/></g></svg></div>
+  <div class="wrap">
+    <div class="foot-card">
+      <div class="fc-cta"><span class="lbl" style="justify-content:center">Passons à l'action</span>
+        <h2>Votre projet commence sur le terrain. Parlons-en.</h2>
+        <a class="btn btn-primary" href="mailto:antoinegaudreau@agcconsultant.ca"><span class="dot"></span>Discuter de votre projet</a></div>
+      <div class="fc-grid">
+        <div><img class="fl" src="logo-agc-complet.png" alt="AGC Consultant inc."><p class="sig">Des solutions pour cultiver l'avenir.</p></div>
+        <div class="fc-col"><h4>Coordonnées</h4><a href="tel:+15793718733">579-371-8733</a><a href="mailto:antoinegaudreau@agcconsultant.ca">antoinegaudreau@agcconsultant.ca</a><span class="v">38, rue de Beauharnois<br>Granby (QC) J2H 0V9</span></div>
+        <div class="fc-col"><h4>Pages</h4><a href="genie-agricole.html">Génie</a><a href="agronomie.html">Agronomie</a><a href="environnement.html">Environnement</a><a href="apropos.html">À propos</a><a href="blog.html">Blogue</a></div>
+      </div>
+    </div>
+    <div class="fc-bottom"><span>© <span id="y"></span> AGC Consultant inc. · Granby</span><span>Conseil. Solutions. Impact.</span></div>
+  </div>
+</section>
+<script>document.getElementById('y').textContent=new Date().getFullYear();var p=document.getElementById('pill'),l=0;addEventListener('scroll',function(){var y=window.scrollY;if(y>l&&y>200){p.classList.add('hide');}else{p.classList.remove('hide');}l=y;},{passive:true});</script>
+<div class="mdrawer" id="mdrawer"><div class="backdrop" id="mbackdrop"></div><div class="panel"><div class="mtop"><img src="logo-agc-nav.png" alt="AGC Consultant"><button class="mclose" id="mclose" aria-label="Fermer">✕</button></div><nav><a href="index.html">Accueil</a><a href="genie-agricole.html">Génie</a><a href="agronomie.html">Agronomie</a><a href="environnement.html">Environnement</a><a href="apropos.html" style="color:var(--lime)">À propos</a><a href="blog.html">Blogue</a></nav><div class="mcta"><a class="btn btn-primary" href="index.html#contact" style="justify-content:center"><span class="dot"></span>Discuter de votre projet</a><a class="btn btn-outline" href="portail.html" style="justify-content:center;border-color:var(--forest);color:var(--forest)">Portail client</a></div></div></div><script>var _md=document.getElementById('mdrawer'),_bg=document.getElementById('burger'),_mc=document.getElementById('mclose'),_bd=document.getElementById('mbackdrop');function _openM(){_md&&_md.classList.add('open');document.body.style.overflow='hidden';}function _closeM(){_md&&_md.classList.remove('open');document.body.style.overflow='';}if(_bg){_bg.onclick=_openM;}if(_mc){_mc.onclick=_closeM;}if(_bd){_bd.onclick=_closeM;}document.addEventListener('keydown',function(e){if(e.key==='Escape')_closeM();});</script></body></html>
