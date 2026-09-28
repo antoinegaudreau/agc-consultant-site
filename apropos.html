@@ -280,6 +280,10 @@ section.cta{background:#E5E3DF}
 .phero h1,.artbody h2,.narr .big,.inc h2,section.cta h2,.contact h2{color:#12151A}
 .sechead h2{color:#12151A}
 .calm h2,.calm .sechead h2,.faq .sechead h2,.credential .who-name{color:#FFFFFF !important}
+.topo-bg{position:absolute;inset:-10%;z-index:0;pointer-events:none;width:120%;height:120%;background-image:url('topo-lines-a.svg');background-repeat:repeat;background-size:640px 500px;animation:topoDrift 80s linear infinite;opacity:.9}
+.topo-bg.b{background-image:url('topo-lines-b.svg');background-size:720px 560px;animation-duration:95s;animation-direction:reverse}
+@keyframes topoDrift{from{transform:translate(0,0)}to{transform:translate(-4%,-3%)}}
+@media(prefers-reduced-motion:reduce){.topo-bg{animation:none!important}}
 </style><link rel="canonical" href="https://www.agcconsultant.ca/apropos.html"><meta name="robots" content="index,follow"><meta name="geo.region" content="CA-QC"><meta name="geo.placename" content="Granby, Québec"><meta property="og:type" content="website"><meta property="og:site_name" content="AGC Consultant inc."><meta property="og:title" content="À propos — firme de génie, agronomie et environnement au Québec | AGC Consultant"><meta property="og:description" content="AGC Consultant inc., firme multidisciplinaire fondée par Antoine Gaudreau, ing., agr. — B. Ing. (Université McGill) et programme d'accès à la profession d'agronome (Université Laval). Génie, agronomie et environnement au Québec."><meta property="og:url" content="https://www.agcconsultant.ca/apropos.html"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "logo": "https://www.agcconsultant.ca/logo-agc-complet.png", "image": "https://www.agcconsultant.ca/logo-agc-complet.png", "name": "AGC Consultant inc.", "description": "AGC Consultant inc., firme multidisciplinaire fondée par Antoine Gaudreau, ing., agr. — B. Ing. (Université McGill) et programme d'accès à la profession d'agronome (Université Laval). Génie, agronomie et environnement au Québec.", "url": "https://www.agcconsultant.ca/apropos.html", "telephone": "+1-579-371-8733", "email": "antoinegaudreau@agcconsultant.ca", "address": {"@type": "PostalAddress", "streetAddress": "38, rue de Beauharnois", "addressLocality": "Granby", "addressRegion": "QC", "postalCode": "J2H 0V9", "addressCountry": "CA"}, "areaServed": {"@type": "State", "name": "Québec"}, "founder": {"@type": "Person", "name": "Antoine Gaudreau", "jobTitle": "Ingénieur et agronome"}, "knowsAbout": ["Génie agricole", "Agronomie", "Environnement", "Plans et devis de bâtiments agricoles", "Bases de silos", "Ouvrages hydro-agricoles", "Drainage", "PAEF", "Bilan de phosphore", "Suivi de cultures par drone", "Carrières et sablières", "Autorisations MELCCFP", "Sols contaminés", "Subventions Prime-Vert, ÉcoPerformance et Bioénergies"]}</script><!-- Cloudflare Web Analytics : va dans ton tableau de bord Cloudflare > Analytics > Web Analytics, active-le pour ton domaine, colle le token qu'il te donne ci-dessous, puis décommente. -->
 <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "TON_TOKEN_ICI"}'></script> -->
 <meta property="og:image" content="https://www.agcconsultant.ca/og-default.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="fr_CA"><meta name="twitter:image" content="https://www.agcconsultant.ca/og-default.jpg"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.agcconsultant.ca/"}, {"@type": "ListItem", "position": 2, "name": "À propos", "item": "https://www.agcconsultant.ca/apropos.html"}]}</script></head>
@@ -329,7 +333,7 @@ section.cta{background:#E5E3DF}
 <section class="blk" id="credentials"><div class="wrap">
   <div class="sechead reveal"><span class="n">01</span><h2>Une double reconnaissance professionnelle</h2><p>Deux formations universitaires et deux ordres professionnels.</p></div>
   <div class="credential reveal">
-    <svg class="cred-bg" viewBox="0 0 900 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="#33502F" stroke-width="1.2" fill="none"><path d="M-20 60 C 180 20,340 100,560 60 S 860 10,940 70"/><path d="M-20 140 C 180 100,340 180,560 140 S 860 90,940 150"/><path d="M-20 220 C 180 180,340 260,560 220 S 860 170,940 230"/></g></svg>
+    <div class="topo-bg" aria-hidden="true"></div>
     <div class="cred-inner">
       <div class="who-name">Antoine Gaudreau</div>
       <div class="who-role">Ingénieur &amp; agronome</div>
@@ -359,7 +363,7 @@ section.cta{background:#E5E3DF}
   </div>
 </div></section>
 <section class="foot-sec" id="contact">
-  <div class="foot-bg" aria-hidden="true"><svg viewBox="0 0 1400 400" preserveAspectRatio="xMidYMid slice"><g stroke="#3a4a34" stroke-width="1.2" fill="none"><path d="M0 120 C 220 70,440 180,700 110 S 1150 40,1460 140"/><path d="M0 240 C 220 190,440 300,700 230 S 1150 160,1460 260"/></g></svg></div>
+  <div class="topo-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="foot-card">
       <div class="fc-cta"><span class="lbl" style="justify-content:center">Passons à l'action</span>
