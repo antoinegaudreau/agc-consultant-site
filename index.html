@@ -129,8 +129,10 @@
   .fc-social a{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--forest);transition:all .18s}
   .fc-social a:hover{background:var(--forest);color:var(--ivory)}
   .fc-social svg{width:16px;height:16px}
-  .fc-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px;font-family:"Space Mono";font-size:.68rem;letter-spacing:.06em;color:#8E948A}
-  .fc-bottom a:hover{color:var(--lime)}
+  .fc-bottom{position:relative;z-index:2;display:flex;justify-content:center;align-items:center;text-align:center;gap:6px 14px;flex-wrap:wrap;margin-top:26px;font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.06em;color:#B7BFAE}
+  .fc-bottom a{color:#CFD7C7;text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .fc-bottom a:hover,.fc-bottom a:focus-visible{color:var(--lime);border-bottom-color:var(--lime)}
+  .fc-bottom .sep{color:#6E7667}
 
   @media(max-width:960px){
     .pill nav .link,.pill .navitem{display:none}.burger{display:flex}
@@ -204,7 +206,8 @@
   .aff-item{max-width:100%}
   .aff-item img{height:46px}
   /* Pied de page */
-  .fc-bottom{flex-direction:column;gap:8px;font-size:.64rem}
+  .fc-bottom{flex-direction:column;gap:6px;font-size:.64rem}
+  .fc-bottom .sep{display:none}
   .fc-pages{gap:12px}
   /* Pages de service : hero et cartes */
   .phero{padding:110px 0 48px}
@@ -533,7 +536,13 @@ section.cta{background:#E5E3DF}
         </div>
       </div>
     </div>
-    <div class="fc-bottom"><span>© <span id="y"></span> AGC Consultant inc. · Granby, Québec</span><span>Conseil. Solutions. Impact.</span></div>
+    <div class="fc-bottom">
+      <span>© <span id="y"></span> AGC Consultant inc. Tous droits réservés.</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Propulsé par <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">Cloudflare</a></span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </div>
   </div>
 </section>
 

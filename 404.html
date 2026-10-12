@@ -26,6 +26,14 @@
   .links{display:flex;gap:.4em 1.4em;justify-content:center;flex-wrap:wrap;font-family:"Space Mono";font-size:.74rem;letter-spacing:.04em;color:var(--olive)}
   .links a:hover{color:var(--forest)}
   footer{padding:22px 32px;font-family:"Space Mono";font-size:.7rem;letter-spacing:.06em;color:var(--mineral);text-align:center}
+  .fc-bottom{position:relative;z-index:2;display:flex;justify-content:center;align-items:center;text-align:center;gap:6px 14px;flex-wrap:wrap;margin-top:26px;font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.06em;color:#B7BFAE}
+  .fc-bottom a{color:#CFD7C7;text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .fc-bottom a:hover,.fc-bottom a:focus-visible{color:var(--lime);border-bottom-color:var(--lime)}
+  .fc-bottom .sep{color:#6E7667}
+  footer .fc-bottom{color:#4A5246}
+  footer .fc-bottom a{color:#586024;border-bottom-color:#586024}
+  footer .fc-bottom a:hover,footer .fc-bottom a:focus-visible{color:#19221A;border-bottom-color:#19221A}
+  footer .fc-bottom .sep{color:#6B7366}
   @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 /* ===== AJUSTEMENTS RESPONSIVES (tablette + mobile) ===== */
 @media(max-width:960px){
@@ -88,7 +96,8 @@
   .aff-item{max-width:100%}
   .aff-item img{height:46px}
   /* Pied de page */
-  .fc-bottom{flex-direction:column;gap:8px;font-size:.64rem}
+  .fc-bottom{flex-direction:column;gap:6px;font-size:.64rem}
+  .fc-bottom .sep{display:none}
   .fc-pages{gap:12px}
   /* Pages de service : hero et cartes */
   .phero{padding:110px 0 48px}
@@ -210,6 +219,12 @@ section.cta{background:#E5E3DF}
     </div>
   </div>
 </main>
-<footer>© <span id="y"></span> AGC Consultant inc. · Granby, Québec · Des solutions pour cultiver l'avenir.</footer>
+<footer><div class="fc-bottom" style="margin-top:0">
+      <span>© <span id="y"></span> AGC Consultant inc. Tous droits réservés.</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Propulsé par <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">Cloudflare</a></span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body></html>
